@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "net.turzilla.poofixes.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin",
+		"DisableEnvEffectsMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "poofixes",
+	"version": "${version}",
+	"name": "Big Poo Fixes",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/poofixes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.turzilla.poofixes.BigPooFixes"
+		],
+		"client": [
+			"net.turzilla.poofixes.BigPooFixesClient"
+		],
+		"fabric-datagen": [
+			"net.turzilla.poofixes.BigPooFixesDataGenerator"
+		]
+	},
+	"mixins": [
+		"poofixes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
